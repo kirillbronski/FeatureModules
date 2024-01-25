@@ -19,5 +19,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Feature Modules"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+rootProject.name = "FeatureModules"
 include(":app")
+include(":core:common")
+include(":core:commonImpl")
