@@ -30,11 +30,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
 }
 
@@ -59,6 +59,13 @@ dependencies {
 
     // Navigation
     implementation(libs.navigation.fragment)
+
+    implementation(projects.core.commonImpl)
+    implementation(projects.core.presentation)
+    implementation(projects.wiring)
+    implementation(projects.navigation)
+    implementation(projects.features.signIn)
+    implementation(projects.data)
 //    implementation(libs.androidx.activity)
 //    testImplementation(libs.junit)
 //    androidTestImplementation(libs.androidx.junit)
