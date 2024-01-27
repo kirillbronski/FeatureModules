@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
-class AdapterGetCurrentUsernameRepository @Inject constructor(
+class GetCurrentUsernameRepositoryImpl @Inject constructor(
     private val accountsRepository: AccountsDataRepository
 ) : GetCurrentUsernameRepository {
 

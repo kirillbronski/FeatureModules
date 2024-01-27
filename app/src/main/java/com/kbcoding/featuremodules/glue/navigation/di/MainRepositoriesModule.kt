@@ -1,7 +1,7 @@
 package com.kbcoding.featuremodules.glue.navigation.di
 
-import com.kbcoding.featuremodules.glue.navigation.repositories.AdapterGetCartItemCountRepository
-import com.kbcoding.featuremodules.glue.navigation.repositories.AdapterGetCurrentUsernameRepository
+import com.kbcoding.featuremodules.glue.navigation.repositories.GetCartItemCountRepositoryImpl
+import com.kbcoding.featuremodules.glue.navigation.repositories.GetCurrentUsernameRepositoryImpl
 import com.kbcoding.navigation.domain.repositories.GetCartItemCountRepository
 import com.kbcoding.navigation.domain.repositories.GetCurrentUsernameRepository
 import dagger.Binds
@@ -15,12 +15,12 @@ interface MainRepositoriesModule {
 
     @Binds
     fun bindGetCurrentUsernameRepository(
-        getCurrentUsernameRepository: AdapterGetCurrentUsernameRepository
+        getCurrentUsernameRepository: GetCurrentUsernameRepositoryImpl
     ): GetCurrentUsernameRepository
 
     @Binds
     fun bindGetCartItemCountRepository(
-        getCartItemCountRepository: AdapterGetCartItemCountRepository
+        getCartItemCountRepository: GetCartItemCountRepositoryImpl
     ): GetCartItemCountRepository
 
 }

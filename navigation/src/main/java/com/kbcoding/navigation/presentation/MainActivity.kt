@@ -115,8 +115,8 @@ class MainActivity : AppCompatActivity(), RouterHolder {
 
     private fun updateCartButtonVisibility() {
         val showCartIcon = viewModel.cartLiveValue.getValue()?.showCartIcon ?: return
-//        val isAlreadyAtCart = navComponentRouter.hasDestinationId(destinationsProvider.provideCartDestinationId())
-//        binding.cartIconContainer.isVisible = showCartIcon && !isAlreadyAtCart
+        val isAlreadyAtCart = navComponentRouter.hasDestinationId(destinationsProvider.provideCartDestinationId())
+        binding.cartIconContainer.isVisible = showCartIcon && !isAlreadyAtCart
     }
 
 

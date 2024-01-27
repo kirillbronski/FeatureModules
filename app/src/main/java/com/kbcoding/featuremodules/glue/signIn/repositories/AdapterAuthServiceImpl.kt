@@ -4,7 +4,7 @@ import com.kbcoding.data.AccountsDataRepository
 import com.kbcoding.signIn.domain.repositories.AuthServiceRepository
 import javax.inject.Inject
 
-class AdapterAuthServiceRepository @Inject constructor(
+class AdapterAuthServiceImpl @Inject constructor(
     private val accountsDataRepository: AccountsDataRepository,
 ) : AuthServiceRepository {
 

@@ -1,8 +1,8 @@
 package com.kbcoding.featuremodules.glue.signIn.di
 
-import com.kbcoding.featuremodules.glue.signIn.repositories.AdapterAuthServiceRepository
-import com.kbcoding.featuremodules.glue.signIn.repositories.AdapterAuthTokenRepository
-import com.kbcoding.featuremodules.glue.signIn.repositories.AdapterProfileRepository
+import com.kbcoding.featuremodules.glue.signIn.repositories.AdapterAuthServiceImpl
+import com.kbcoding.featuremodules.glue.signIn.repositories.AuthTokenRepositoryImpl
+import com.kbcoding.featuremodules.glue.signIn.repositories.ProfileRepositoryImpl
 import com.kbcoding.signIn.domain.repositories.AuthServiceRepository
 import com.kbcoding.signIn.domain.repositories.AuthTokenRepository
 import com.kbcoding.signIn.domain.repositories.ProfileRepository
@@ -17,17 +17,17 @@ interface SignInRepositoriesModule {
 
     @Binds
     fun bindAuthRepository(
-        authServiceRepository: AdapterAuthServiceRepository
+        authServiceRepository: AdapterAuthServiceImpl
     ): AuthServiceRepository
 
     @Binds
     fun bindAuthTokenRepository(
-        authTokenRepository: AdapterAuthTokenRepository
+        authTokenRepository: AuthTokenRepositoryImpl
     ): AuthTokenRepository
 
     @Binds
     fun bindProfileRepository(
-        profileRepository: AdapterProfileRepository
+        profileRepository: ProfileRepositoryImpl
     ): ProfileRepository
 
 }

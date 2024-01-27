@@ -10,15 +10,15 @@ import com.kbcoding.common.Resources
 import com.kbcoding.common.ScreenCommunication
 import kotlinx.coroutines.CoroutineScope
 
-class DefaultCoreProvider(
+class CoreProviderImpl(
     private val appContext: Context,
     override val appRestarter: AppRestarter,
-    override val commonUi: CommonUi = AndroidCommonUi(appContext),
-    override val resources: Resources = AndroidResources(appContext),
+    override val commonUi: CommonUi = CommonUiImpl(appContext),
+    override val resources: Resources = ResourcesImpl(appContext),
     override val screenCommunication: ScreenCommunication = DefaultScreenCommunication(),
     override val globalScope: CoroutineScope = createDefaultGlobalScope(),
-    override val logger: Logger = AndroidLogger(),
-    override val errorHandler: ErrorHandler = DefaultErrorHandler(
+    override val logger: Logger = LoggerImpl(),
+    override val errorHandler: ErrorHandler = ErrorHandlerImpl(
         logger, commonUi, resources, appRestarter, globalScope
     )
 ) : CoreProvider

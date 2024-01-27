@@ -7,7 +7,7 @@ import com.kbcoding.navigation.presentation.navigation.NavTab
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
-class DefaultDestinationsProvider @Inject constructor(
+class DestinationsProviderImpl @Inject constructor(
     @ApplicationContext private val context: Context
 ) : DestinationsProvider {
 

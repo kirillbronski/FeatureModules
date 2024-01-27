@@ -20,6 +20,7 @@ import com.kbcoding.presentation.ARG_SCREEN
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import java.util.regex.Pattern
 
@@ -125,10 +126,10 @@ class NavComponentRouter @AssistedInject constructor(
     internal fun addDestinationListener(listener: () -> Unit) {
         destinationListeners.add(listener)
     }
-// TODO: fix it
-//    internal fun hasDestinationId(id: Int): Boolean {
-//        return getRootNavController().currentBackStack.value.any { it.destination.id == id }
-//    }
+
+    internal fun hasDestinationId(id: Int): Boolean {
+        return getRootNavController().currentDestination?.id?.let { it == id } ?: false
+    }
 
     internal fun isDialog(): Boolean {
         return fragmentDialogs > 0

@@ -1,6 +1,6 @@
 package com.kbcoding.featuremodules.glue.navigation.di
 
-import com.kbcoding.featuremodules.glue.navigation.DefaultMainRouter
+import com.kbcoding.featuremodules.glue.navigation.MainRouterImpl
 import com.kbcoding.navigation.presentation.MainRouter
 import dagger.Binds
 import dagger.Module
@@ -12,6 +12,6 @@ import dagger.hilt.android.components.ActivityRetainedComponent
 interface MainRouterModule {
 
     @Binds
-    fun bindMainRouter(router: DefaultMainRouter): MainRouter
+    fun bindMainRouter(router: MainRouterImpl): MainRouter
 
 }

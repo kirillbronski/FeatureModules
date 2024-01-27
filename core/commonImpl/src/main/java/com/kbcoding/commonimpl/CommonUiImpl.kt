@@ -16,7 +16,7 @@ import kotlin.coroutines.resume
  * Dialogs are displayed only when activity is started. Otherwise they are
  * postponed.
  */
-class AndroidCommonUi(
+class CommonUiImpl(
     private val applicationContext: Context
 ) : CommonUi, ActivityRequired {
 

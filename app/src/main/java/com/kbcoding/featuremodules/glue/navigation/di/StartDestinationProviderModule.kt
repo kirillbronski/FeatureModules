@@ -1,6 +1,6 @@
 package com.kbcoding.featuremodules.glue.navigation.di
 
-import com.kbcoding.featuremodules.glue.navigation.DefaultDestinationsProvider
+import com.kbcoding.featuremodules.glue.navigation.DestinationsProviderImpl
 import com.kbcoding.navigation.DestinationsProvider
 import dagger.Binds
 import dagger.Module
@@ -13,7 +13,7 @@ interface StartDestinationProviderModule {
 
     @Binds
     fun bindStartDestinationProvider(
-        startDestinationProvider: DefaultDestinationsProvider
+        startDestinationProvider: DestinationsProviderImpl
     ): DestinationsProvider
 
 }

@@ -5,7 +5,7 @@ import com.kbcoding.navigation.GlobalNavComponentRouter
 import com.kbcoding.signIn.presentation.SignInRouter
 import javax.inject.Inject
 
-class AdapterSignInRouter @Inject constructor(
+class SignInRouterImpl @Inject constructor(
     private val globalNavComponentRouter: GlobalNavComponentRouter
 ) : SignInRouter {
 

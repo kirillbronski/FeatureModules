@@ -16,7 +16,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.launch
 
-class DefaultErrorHandler(
+class ErrorHandlerImpl(
     private val logger: Logger,
     private val commonUi: CommonUi,
     private val resources: Resources,

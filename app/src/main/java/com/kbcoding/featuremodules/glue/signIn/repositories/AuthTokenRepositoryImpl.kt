@@ -4,7 +4,7 @@ import com.kbcoding.data.settings.SettingsDataSource
 import com.kbcoding.signIn.domain.repositories.AuthTokenRepository
 import javax.inject.Inject
 
-class AdapterAuthTokenRepository @Inject constructor(
+class AuthTokenRepositoryImpl @Inject constructor(
     private val settingsDataSource: SettingsDataSource,
 ) : AuthTokenRepository {
 

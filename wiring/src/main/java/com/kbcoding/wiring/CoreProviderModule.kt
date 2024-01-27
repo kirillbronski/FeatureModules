@@ -12,7 +12,7 @@ import com.kbcoding.common.ScreenCommunication
 import com.kbcoding.common.flow.DefaultLazyFlowSubjectFactory
 import com.kbcoding.common.flow.LazyFlowSubjectFactory
 import com.kbcoding.commonimpl.ActivityRequired
-import com.kbcoding.commonimpl.DefaultCoreProvider
+import com.kbcoding.commonimpl.CoreProviderImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -33,7 +33,7 @@ class CoreProviderModule {
         @ApplicationContext context: Context,
         appRestarter: AppRestarter,
     ): CoreProvider {
-        return DefaultCoreProvider(
+        return CoreProviderImpl(
             appContext = context,
             appRestarter = appRestarter
         )

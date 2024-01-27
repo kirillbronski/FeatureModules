@@ -7,7 +7,7 @@ import com.kbcoding.common.Resources
 /**
  * Default implementation of [Resources] which fetches strings from an application context.
  */
-class AndroidResources(
+class ResourcesImpl(
     private val applicationContext: Context,
 ) : Resources {
 

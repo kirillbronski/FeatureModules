@@ -4,7 +4,7 @@ import com.kbcoding.navigation.GlobalNavComponentRouter
 import com.kbcoding.navigation.presentation.MainRouter
 import javax.inject.Inject
 
-class DefaultMainRouter @Inject constructor(
+class MainRouterImpl @Inject constructor(
     private val navComponentRouter: GlobalNavComponentRouter
 ) : MainRouter {
 

@@ -6,7 +6,7 @@ import com.kbcoding.data.AccountsDataRepository
 import com.kbcoding.signIn.domain.repositories.ProfileRepository
 import javax.inject.Inject
 
-class AdapterProfileRepository @Inject constructor(
+class ProfileRepositoryImpl @Inject constructor(
     private val accountsDataRepository: AccountsDataRepository,
 ) : ProfileRepository {
 

@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
-class AdapterGetCartItemCountRepository @Inject constructor(
+class GetCartItemCountRepositoryImpl @Inject constructor(
     private val cartDataRepository: CartDataRepository,
 ) : GetCartItemCountRepository {
 
