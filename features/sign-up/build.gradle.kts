@@ -1,10 +1,12 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
+    alias(libs.plugins.hilt)
 }
 
 android {
-    namespace = "com.kbcoding.presentation"
+    namespace = "com.kbcoding.signUp"
     compileSdk = 34
 
     defaultConfig {
@@ -30,7 +32,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
     viewBinding {
         enable = true
     }
@@ -40,13 +41,17 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    //implementation(libs.androidx.lifecycle.runtime)
-    implementation(libs.androidx.fragment)
-
     implementation(libs.material)
 
-    implementation(libs.coil)
+    //implementation(libs.androidx.lifecycle.runtime)
 
-    api(projects.core.common)
-    api(projects.core.theme)
+    // Hilt
+    implementation(libs.hilt)
+    kapt(libs.hilt.compiler)
+
+    implementation(projects.core.presentation)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }

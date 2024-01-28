@@ -65,6 +65,7 @@ dependencies {
     implementation(projects.wiring)
     implementation(projects.navigation)
     implementation(projects.features.signIn)
+    implementation(projects.features.signUp)
     implementation(projects.data)
 //    implementation(libs.androidx.activity)
 //    testImplementation(libs.junit)

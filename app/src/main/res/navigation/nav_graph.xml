@@ -17,4 +17,10 @@
         android:label="@string/title_sign_in"
         tools:layout="@layout/fragment_tabs"/>
 
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.kbcoding.signUp.presentation.signUp.SignUpFragment"
+        android:label="@string/title_sign_up"
+        tools:layout="@layout/fragment_sign_up"/>
+
 </navigation>
