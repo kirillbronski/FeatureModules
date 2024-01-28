@@ -5,7 +5,7 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import com.kbcoding.data.cart.sources.CartDataSource
-import com.kbcoding.data.cart.sources.InMemoryCartDataSource
+import com.kbcoding.data.cart.sources.CartDataSourceImpl
 import javax.inject.Singleton
 
 
@@ -15,6 +15,6 @@ interface CartSourcesModule {
 
     @Binds
     @Singleton
-    fun bindCartSource(cartDataSource: InMemoryCartDataSource): CartDataSource
+    fun bindCartSource(cartDataSource: CartDataSourceImpl): CartDataSource
 
 }

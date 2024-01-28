@@ -12,7 +12,7 @@ import com.kbcoding.data.cart.sources.CartDataSource
 import com.kbcoding.data.settings.SettingsDataSource
 import javax.inject.Inject
 
-class RealCartDataRepository @Inject constructor(
+class CartDataRepositoryImpl @Inject constructor(
     private val cartDataSource: CartDataSource,
     private val settingsDataSource: SettingsDataSource,
     scope: CoroutineScope,

@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class RealAccountsDataRepository @Inject constructor(
+class AccountsDataRepositoryImpl @Inject constructor(
     private val accountsDataSource: AccountsDataSource,
     private val settingsDataSource: SettingsDataSource,
     coroutineScope: CoroutineScope,

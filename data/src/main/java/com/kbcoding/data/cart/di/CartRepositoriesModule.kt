@@ -5,7 +5,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ua.cn.stu.multimodule.data.cart.RealCartDataRepository
+import ua.cn.stu.multimodule.data.cart.CartDataRepositoryImpl
 import javax.inject.Singleton
 
 @Module
@@ -15,7 +15,7 @@ interface CartRepositoriesModule {
     @Binds
     @Singleton
     fun bindCartRepository(
-        cartDataRepository: RealCartDataRepository
+        cartDataRepository: CartDataRepositoryImpl
     ): CartDataRepository
 
 }

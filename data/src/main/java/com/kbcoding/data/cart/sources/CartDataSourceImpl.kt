@@ -3,7 +3,7 @@ package com.kbcoding.data.cart.sources
 import com.kbcoding.data.cart.entities.CartItemDataEntity
 import javax.inject.Inject
 
-class InMemoryCartDataSource @Inject constructor() : CartDataSource {
+class CartDataSourceImpl @Inject constructor() : CartDataSource {
 
     private val cart = mutableListOf<CartItemDataEntity>()
 

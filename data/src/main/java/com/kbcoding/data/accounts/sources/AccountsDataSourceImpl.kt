@@ -9,7 +9,7 @@ import kotlinx.coroutines.delay
 import java.util.UUID
 import javax.inject.Inject
 
-class InMemoryAccountsDataSource @Inject constructor(
+class AccountsDataSourceImpl @Inject constructor(
     private val settings: SettingsDataSource,
 ) : AccountsDataSource {
 
