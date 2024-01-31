@@ -67,6 +67,7 @@ dependencies {
     implementation(projects.features.signIn)
     implementation(projects.features.signUp)
     implementation(projects.data)
+    implementation(projects.features.catalog)
 //    implementation(libs.androidx.activity)
 //    testImplementation(libs.junit)
 //    androidTestImplementation(libs.androidx.junit)

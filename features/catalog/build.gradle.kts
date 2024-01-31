@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.kbcoding.data"
+    namespace = "com.kbcoding.catalog"
     compileSdk = 34
 
     defaultConfig {
@@ -32,17 +32,28 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.faker)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.constraintlayout)
+
+    implementation(libs.element.adapter)
+
+    implementation(libs.material)
 
     // Hilt
     implementation(libs.hilt)
     kapt(libs.hilt.compiler)
 
-    // Modules
-    implementation(projects.core.common)
+    implementation(projects.core.presentation)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }

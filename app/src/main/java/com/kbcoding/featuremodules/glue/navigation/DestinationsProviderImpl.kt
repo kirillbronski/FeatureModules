@@ -22,11 +22,11 @@ class DestinationsProviderImpl @Inject constructor(
     // TODO: implementd
     override fun provideMainTabs(): List<NavTab> {
         return listOf(
-//            NavTab(
-//                destinationId = R.id.catalogFragment,
-//                title = context.getString(R.string.tab_catalog),
-//                iconRes = R.drawable.ic_catalog,
-//            ),
+            NavTab(
+                destinationId = R.id.catalogFragment,
+                title = context.getString(R.string.tab_catalog),
+                iconRes = R.drawable.ic_catalog,
+            ),
 //            NavTab(
 //                destinationId = R.id.ordersListFragment,
 //                title = context.getString(R.string.tab_orders),

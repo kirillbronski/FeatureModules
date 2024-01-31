@@ -12,15 +12,33 @@
         tools:layout="@layout/fragment_sign_in" />
 
     <fragment
-        android:id="@+id/tabsFragment"
-        android:name="com.kbcoding.navigation.presentation.TabsFragment"
-        android:label="@string/title_sign_in"
-        tools:layout="@layout/fragment_tabs"/>
-
-    <fragment
         android:id="@+id/signUpFragment"
         android:name="com.kbcoding.signUp.presentation.signUp.SignUpFragment"
         android:label="@string/title_sign_up"
-        tools:layout="@layout/fragment_sign_up"/>
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.kbcoding.navigation.presentation.TabsFragment"
+        android:label="@string/title_sign_in"
+        tools:layout="@layout/fragment_tabs" />
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.kbcoding.catalog.presentation.catalog.CatalogFragment"
+        android:label="@string/title_catalog"
+        tools:layout="@layout/fragment_catalog" />
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.kbcoding.catalog.presentation.details.ProductDetailsFragment"
+        android:label="@string/title_product_details"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/catalogFilterFragment"
+        android:name="com.kbcoding.catalog.presentation.filter.CatalogFilterFragment"
+        android:label="@string/title_filter"
+        tools:layout="@layout/fragment_filter" />
 
 </navigation>
