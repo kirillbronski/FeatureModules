@@ -69,6 +69,7 @@ dependencies {
     implementation(projects.data)
     implementation(projects.features.catalog)
     implementation(projects.features.cart)
+    implementation(projects.features.profile)
 //    implementation(libs.androidx.activity)
 //    testImplementation(libs.junit)
 //    androidTestImplementation(libs.androidx.junit)

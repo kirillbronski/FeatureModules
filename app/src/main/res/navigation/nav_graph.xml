@@ -53,5 +53,17 @@
         android:label="@string/title_edit_quantity"
         tools:layout="@layout/dialog_quantity"/>
 
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kbcoding.profile.presentation.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.kbcoding.profile.presentation.edit.EditProfileFragment"
+        android:label="@string/title_edit_profile"
+        tools:layout="@layout/fragment_edit_profile"/>
+
 
 </navigation>

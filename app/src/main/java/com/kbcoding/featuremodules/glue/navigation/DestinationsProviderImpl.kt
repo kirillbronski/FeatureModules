@@ -32,18 +32,18 @@ class DestinationsProviderImpl @Inject constructor(
 //                title = context.getString(R.string.tab_orders),
 //                iconRes = R.drawable.ic_orders,
 //            ),
-//            NavTab(
-//                destinationId = R.id.profileFragment,
-//                title = context.getString(R.string.tab_profile),
-//                iconRes = R.drawable.ic_profile,
-//            )
+            NavTab(
+                destinationId = R.id.profileFragment,
+                title = context.getString(R.string.tab_profile),
+                iconRes = R.drawable.ic_profile,
+            )
         )
     }
 
     override fun provideTabsDestinationId(): Int {
         return R.id.tabsFragment
     }
-    
+
     override fun provideCartDestinationId(): Int {
         return R.id.cartListFragment
     }
