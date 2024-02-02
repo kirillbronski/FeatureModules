@@ -19,7 +19,6 @@ class DestinationsProviderImpl @Inject constructor(
         return R.navigation.nav_graph
     }
 
-    // TODO: implementd
     override fun provideMainTabs(): List<NavTab> {
         return listOf(
             NavTab(
@@ -27,11 +26,11 @@ class DestinationsProviderImpl @Inject constructor(
                 title = context.getString(R.string.tab_catalog),
                 iconRes = R.drawable.ic_catalog,
             ),
-//            NavTab(
-//                destinationId = R.id.ordersListFragment,
-//                title = context.getString(R.string.tab_orders),
-//                iconRes = R.drawable.ic_orders,
-//            ),
+            NavTab(
+                destinationId = R.id.ordersListFragment,
+                title = context.getString(R.string.tab_orders),
+                iconRes = R.drawable.ic_orders,
+            ),
             NavTab(
                 destinationId = R.id.profileFragment,
                 title = context.getString(R.string.tab_profile),

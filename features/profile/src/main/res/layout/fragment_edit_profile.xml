@@ -50,7 +50,7 @@
 
             <Button
                 android:id="@+id/saveButton"
-                style="@style/GlobalTextInputStyle.Big"
+                style="@style/GlobalButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_action_save"
@@ -62,7 +62,7 @@
 
             <Button
                 android:id="@+id/cancelButton"
-                style="@style/GlobalTextInputStyle.Secondary.Big"
+                style="@style/GlobalButtonOutlineStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_action_cancel"

@@ -17,9 +17,9 @@ class CatalogRouterImpl @Inject constructor(
         )
     }
 
-    // TODO: implemented create order fragment
+
     override fun launchCreateOrder() {
-        //globalNavComponentRouter.launch(R.id.createOrderFragment)
+        globalNavComponentRouter.launch(R.id.createOrderFragment)
     }
 
 }

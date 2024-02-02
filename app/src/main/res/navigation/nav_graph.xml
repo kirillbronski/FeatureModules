@@ -65,5 +65,17 @@
         android:label="@string/title_edit_profile"
         tools:layout="@layout/fragment_edit_profile"/>
 
+    <fragment
+        android:id="@+id/ordersListFragment"
+        android:name="com.kbcoding.orders.presentation.orders.OrdersListFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders_list"/>
+
+    <fragment
+        android:id="@+id/createOrderFragment"
+        android:name="com.kbcoding.orders.presentation.create.CreateOrderFragment"
+        android:label="@string/title_create_order"
+        tools:layout="@layout/fragment_create_order"/>
+
 
 </navigation>

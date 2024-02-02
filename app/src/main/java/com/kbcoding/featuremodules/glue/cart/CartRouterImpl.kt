@@ -35,9 +35,8 @@ class CartRouterImpl @Inject constructor(
         )
     }
 
-    // TODO: Implemented create order
     override fun launchCreateOrder() {
-        //globalNavComponentRouter.launch(R.id.createOrderFragment)
+        globalNavComponentRouter.launch(R.id.createOrderFragment)
     }
 
     override fun receiveQuantity(): Flow<EditQuantityResult> {
