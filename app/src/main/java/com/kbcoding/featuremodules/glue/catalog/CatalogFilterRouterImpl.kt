@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class AdapterCatalogFilterRouter @Inject constructor(
+class CatalogFilterRouterImpl @Inject constructor(
     private val globalNavComponentRouter: GlobalNavComponentRouter,
     private val screenCommunication: ScreenCommunication,
 ) : CatalogFilterRouter {

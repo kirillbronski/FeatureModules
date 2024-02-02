@@ -6,7 +6,7 @@ import com.kbcoding.featuremodules.R
 import com.kbcoding.navigation.GlobalNavComponentRouter
 import javax.inject.Inject
 
-class AdapterCatalogRouter @Inject constructor(
+class CatalogRouterImpl @Inject constructor(
     private val globalNavComponentRouter: GlobalNavComponentRouter,
 ) : CatalogRouter {
 

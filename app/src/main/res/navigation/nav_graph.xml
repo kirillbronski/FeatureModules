@@ -41,4 +41,17 @@
         android:label="@string/title_filter"
         tools:layout="@layout/fragment_filter" />
 
+    <fragment
+        android:id="@+id/cartListFragment"
+        android:name="com.kbcoding.features.cart.presentation.cartlist.CartListFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart_list"/>
+
+    <dialog
+        android:id="@+id/editQuantityDialogFragment"
+        android:name="com.kbcoding.features.cart.presentation.quantity.EditQuantityDialogFragment"
+        android:label="@string/title_edit_quantity"
+        tools:layout="@layout/dialog_quantity"/>
+
+
 </navigation>

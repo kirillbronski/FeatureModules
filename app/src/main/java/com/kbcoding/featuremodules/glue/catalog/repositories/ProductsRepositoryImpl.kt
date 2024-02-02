@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.map
 import com.kbcoding.data.ProductsDataRepository
 import javax.inject.Inject
 
-class AdapterProductsRepository @Inject constructor(
+class ProductsRepositoryImpl @Inject constructor(
     private val productsDataRepository: ProductsDataRepository,
     private val productMapper: ProductMapper,
     private val productFilterMapper: ProductFilterMapper,

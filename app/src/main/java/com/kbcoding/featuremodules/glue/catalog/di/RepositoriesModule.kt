@@ -2,8 +2,8 @@ package com.kbcoding.featuremodules.glue.catalog.di
 
 import com.kbcoding.catalog.domain.repositories.CartRepository
 import com.kbcoding.catalog.domain.repositories.ProductsRepository
-import com.kbcoding.featuremodules.glue.catalog.repositories.AdapterCartRepository
-import com.kbcoding.featuremodules.glue.catalog.repositories.AdapterProductsRepository
+import com.kbcoding.featuremodules.glue.catalog.repositories.CartRepositoryImpl
+import com.kbcoding.featuremodules.glue.catalog.repositories.ProductsRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -15,12 +15,12 @@ interface RepositoriesModule {
 
     @Binds
     fun provideProductsRepository(
-        repository: AdapterProductsRepository
+        repository: ProductsRepositoryImpl
     ): ProductsRepository
 
     @Binds
     fun provideCartRepository(
-        repository: AdapterCartRepository
+        repository: CartRepositoryImpl
     ): CartRepository
 
 }

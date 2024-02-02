@@ -43,9 +43,8 @@ class DestinationsProviderImpl @Inject constructor(
     override fun provideTabsDestinationId(): Int {
         return R.id.tabsFragment
     }
-
-    // TODO: implemented cart fragment
+    
     override fun provideCartDestinationId(): Int {
-        return R.id.tabsFragment
+        return R.id.cartListFragment
     }
 }

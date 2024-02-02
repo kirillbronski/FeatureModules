@@ -6,8 +6,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityRetainedComponent
-import com.kbcoding.featuremodules.glue.catalog.AdapterCatalogFilterRouter
-import com.kbcoding.featuremodules.glue.catalog.AdapterCatalogRouter
+import com.kbcoding.featuremodules.glue.catalog.CatalogFilterRouterImpl
+import com.kbcoding.featuremodules.glue.catalog.CatalogRouterImpl
 
 @Module
 @InstallIn(ActivityRetainedComponent::class)
@@ -15,12 +15,12 @@ interface RouterModule {
 
     @Binds
     fun bindCatalogRouter(
-        catalogRouter: AdapterCatalogRouter
+        catalogRouter: CatalogRouterImpl
     ): CatalogRouter
 
     @Binds
     fun bindCatalogFilterRouter(
-        router: AdapterCatalogFilterRouter
+        router: CatalogFilterRouterImpl
     ): CatalogFilterRouter
 
 }
